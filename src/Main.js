@@ -1,4 +1,5 @@
 import React from "react";
+
 import {
     Route,
     NavLink,
@@ -15,8 +16,8 @@ class Main extends React.Component {
         <div>
           <ul className="header">      
             <li><NavLink exact to="/">Home</NavLink></li>
-            <li><NavLink to="/about">About</NavLink></li>
-            <li><NavLink to="/contact">Contact</NavLink></li>        
+            <li><NavLink to="/about">Market trend</NavLink></li>
+            <li><NavLink to="/contact">Login</NavLink></li>        
           </ul>
 
           <div className="content">
