@@ -1,14 +1,30 @@
 import React, { Component } from 'react';
 import './App.css';
-import BarChart from './components/BarChart';
-import data from './assets/avocado.json';
+import Header from './components/Header'
+import { ChatBot } from 'aws-amplify-react';
 
 class App extends Component {
+  handleComplete(err, confirmation) {
+    if (err) {
+      alert('Bot conversation failed')
+      return;
+    }
+    alert('Success: ' + JSON.stringify(confirmation, null, 2));
+    return 'Reservation booked. Thank you! What would you like to do next?';
+  }
+ 
   render() {
+    
     return (
-      <div className="App">
-        <h1>Avocado trend</h1>
-        <BarChart data ={data} />
+      <div>
+      <Header />
+      <ChatBot
+      title="Avot"
+      botName="avotMOBILEHUB"
+      welcomeMessage="Welcome, how can I help you today?"
+      onComplete={this.handleComplete.bind(this)}
+      clearOnComplete={true}
+    />
       </div>
     );
   }
