@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Main from './Main';
 import * as serviceWorker from './serviceWorker';
-import config from './aws-exports' // new
-import Amplify from 'aws-amplify' // new
+import config from './aws-exports' 
+import Amplify from 'aws-amplify' 
 Amplify.configure(config)
 
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<Main />, document.getElementById('root'));
 
 serviceWorker.unregister();
