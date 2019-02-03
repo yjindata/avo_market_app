@@ -1,50 +1,14 @@
 [
   {
-    "4046": 1036.74,
-    "4225": 54454.85,
-    "4770": 48.16,
-    "": 0,
     "x": "2015-12-27",
-    "y": 1.33,
-    "Total Volume": 64236.62,
-    "Total Bags": 8696.87,
-    "Small Bags": 8603.62,
-    "Large Bags": 93.25,
-    "XLarge Bags": 0,
-    "type": "conventional",
-    "year": 2015,
-    "region": "Albany"
+    "y": 1.33
   },
   {
-    "4046": 674.28,
-    "4225": 44638.81,
-    "4770": 58.33,
-    "": 1,
     "x": "2015-12-20",
-    "y": 1.35,
-    "Total Volume": 54876.98,
-    "Total Bags": 9505.56,
-    "Small Bags": 9408.07,
-    "Large Bags": 97.49,
-    "XLarge Bags": 0,
-    "type": "conventional",
-    "year": 2015,
-    "region": "Albany"
+    "y": 1.35
   },
   {
-    "4046": 794.7,
-    "4225": 109149.67,
-    "4770": 130.5,
-    "": 2,
     "x": "2015-12-13",
-    "y": 0.93,
-    "Total Volume": 118220.22,
-    "Total Bags": 8145.35,
-    "Small Bags": 8042.21,
-    "Large Bags": 103.14,
-    "XLarge Bags": 0,
-    "type": "conventional",
-    "year": 2015,
-    "region": "Albany"
+    "y": 0.93
   }
 ]

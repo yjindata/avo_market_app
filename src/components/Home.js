@@ -1,31 +1,62 @@
 import React, { Component } from 'react';
-import { ChatBot } from 'aws-amplify-react';
-import Header from './Header';
-class Home extends Component {
-  handleComplete(err, confirmation) {
-    if (err) {
-      alert('Bot conversation failed')
-      return;
-    }
-    alert('Success: ' + JSON.stringify(confirmation, null, 2));
-    return 'Reservation booked. Thank you! What would you like to do next?';
-  }
- 
-  render() {
-    
-    return (
-    <div>
-     <Header />
-      <ChatBot
-      title="Avot"
-      botName="avotMOBILEHUB"
-      welcomeMessage="Welcome, how can I help you today?"
-      onComplete={this.handleComplete.bind(this)}
-      clearOnComplete={true}
-    />
-    </div>
-    );
-  }
-}
+import Chat from './Chat';
+import BarChart from './BarChart';
 
-export default Home;
+class Home extends Component {
+  // calls the login method in authentication service
+  login = () => {
+    this.props.auth.login();
+  }
+  // calls the logout method in authentication service
+  logout = () => {
+    this.props.auth.logout();
+  }
+  render() {
+    // calls the isAuthenticated method in authentication service
+    const { isAuthenticated } = this.props.auth;
+    return (
+      
+      <div>
+        
+        {
+          isAuthenticated() &&
+          <div className="container column">
+            <h5>
+             
+              <a href style={{ cursor: 'pointer' }}
+                onClick={this.logout}
+              >
+                Log Out
+              </a>
+            </h5>
+            <Chat />
+            <BarChart />
+          </div>
+        }
+        {
+          !isAuthenticated() && (
+            <div className="container column">
+              <h1>Avodado market</h1>
+              <h5>
+                Please{' '}
+                <a href
+                  style={{ cursor: 'pointer' }}
+                  onClick={this.login}
+                >
+                  Log In
+                </a>
+                {' '}to check it out dashboard
+              </h5>
+            </div>
+          )
+        }
+
+
+        
+      </div>
+      
+      );
+    }
+  }
+
+  export default Home;

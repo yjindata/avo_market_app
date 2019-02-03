@@ -5,9 +5,9 @@ import {
     NavLink,
     HashRouter
   } from "react-router-dom";
-  import Home from "./components/Home";
-  import Contact from "./components/Contact";
-  import About from "./components/About";
+  import Home from "./components/Chat"
+  import Barchart from "./components/BarChart";
+
 
 class Main extends React.Component {
   render() {
@@ -16,14 +16,15 @@ class Main extends React.Component {
         <div>
           <ul className="header">      
             <li><NavLink exact to="/">Home</NavLink></li>
-            <li><NavLink to="/about">Market trend</NavLink></li>
-            <li><NavLink to="/contact">Login</NavLink></li>        
+            <li><NavLink to="/barchart">Market trend</NavLink></li>
+
           </ul>
 
           <div className="content">
             <Route exact path="/" component={Home}/>
-            <Route path="/about" component={About}/>
-            <Route path="/contact" component={Contact}/>
+        
+          <Route path="/barchart" component={Barchart}/>
+
           </div>
         <div >
 
