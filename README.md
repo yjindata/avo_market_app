@@ -5,7 +5,14 @@
 * Data visualization
 * Chatbot
 
+## Future 
+* Fix auth0 
+* Add social login
+
+## Screenshot
+
 ## Reference
+*
 
 ## creator 
 Yujin Kim

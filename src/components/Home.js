@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Chat from './Chat';
 import Explain from './HomeExplain';
+import BarChart from './BarChart';
 
 class Home extends Component {
   // calls the login method in authentication service
@@ -30,7 +31,7 @@ class Home extends Component {
               </a>
             </h5>
             <Chat />
-         
+            <BarChart />
           </div>
         }
         {
@@ -39,8 +40,9 @@ class Home extends Component {
               <h1>Avodado market</h1>
 
               <Explain />
+              <Chat />
               <br></br><br></br><br></br>
-              <h5>
+              <p>
                 Please{' '}
                 <a href
                   style={{ cursor: 'pointer' }}
@@ -48,8 +50,8 @@ class Home extends Component {
                 >
                   Log In
                 </a>
-                {' '}to check chatbot!
-              </h5>
+                {' '}to check it out more dashboard!
+              </p>
               <br></br><br></br>
               
             </div>
