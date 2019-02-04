@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Chat from './Chat';
-import BarChart from './BarChart';
+import Explain from './HomeExplain';
 
 class Home extends Component {
   // calls the login method in authentication service
@@ -30,13 +30,16 @@ class Home extends Component {
               </a>
             </h5>
             <Chat />
-            <BarChart />
+         
           </div>
         }
         {
           !isAuthenticated() && (
             <div className="container column">
               <h1>Avodado market</h1>
+
+              <Explain />
+              <br></br><br></br><br></br>
               <h5>
                 Please{' '}
                 <a href
@@ -45,8 +48,10 @@ class Home extends Component {
                 >
                   Log In
                 </a>
-                {' '}to check it out dashboard
+                {' '}to check chatbot!
               </h5>
+              <br></br><br></br>
+              
             </div>
           )
         }

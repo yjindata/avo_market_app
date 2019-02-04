@@ -5,6 +5,7 @@ body {
   padding: 0px;
   margin: 0;
   color: #343a40; 
+  padding-top:5rem;
 }
 
 h2, h4, p, ul, li {
@@ -61,7 +62,7 @@ ul.header li a:hover, a:active, a:visited, a:focus r {
 
 .content {
   background-color: white;
-  padding-top: 1rem;
+  padding-top: 3rem;
   padding: 1.3rem;
   margin-top: 5rem;
   margin-left: 15rem;

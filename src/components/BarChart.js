@@ -4,7 +4,7 @@ export default class BarChart extends Component {
   render() {
     return (
       <div>
-        <h1>barchart</h1>
+    <h1>bar</h1>
       </div>
     )
   }
