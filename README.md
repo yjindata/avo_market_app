@@ -1,18 +1,18 @@
-### Avo market
+## Avo market
 
-## Function
+### Function
 * Sign up and Login with auth0
 * Data visualization
 * Chatbot
 
-## Future 
-* Fix auth0 
-* Add social login
+### Screenshot
 
-## Screenshot
-
-## Reference
+### Reference
 *
 
-## creator 
+### Future works
+* Fix auth0 login error
+* Add social login
+
+### creator 
 Yujin Kim
