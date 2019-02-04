@@ -16,12 +16,11 @@ const handleAuthentication = (nextState, replace) => {
 const Routes = () => (
   <Router history={history} component={Home}>
     <div>
-    <ul className="header">
-          <li><NavLink exact to="/">Home</NavLink></li>
-            <li><NavLink to="/home">Login</NavLink></li>
-          </ul>
+      <ul className="header">
+        <li><NavLink exact to="/">Home</NavLink></li>
+        <li><NavLink to="/home">Login</NavLink></li>
+      </ul>
 
-      
       <Route exact path="/" render={(props) => <Home auth={auth} {...props} />} />
       <Route path="/home" render={(props) => <Home auth={auth} {...props} />} />
       <Route path="/callback" render={(props) => {
