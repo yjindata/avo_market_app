@@ -7,9 +7,9 @@ export default class HomeExplain extends Component {
     return (
       <div className="row">
         <div className="col-md-6 col-sm-6">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum lectus est,
-           eget faucibus eros porta id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum lectus est,
-           eget faucibus eros porta id.</p>
+        <p>Hello! Welcome to avocado market trend app</p>
+        <p>This is sample project for visualizing market trend and implementing chatbot to getting related information</p>
+        <p>Currently, I'm updating authentication and improving chatbot's conversation</p>
            </div>
            <div className="col-md-6 col-sm-6">
         <img src={require('../assets/images/img_avo.jpeg')} alt="My Example" />
