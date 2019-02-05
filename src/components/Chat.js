@@ -10,12 +10,11 @@ class Home extends Component {
     alert('Success: ' + JSON.stringify(confirmation, null, 2));
     return 'Reservation booked. Thank you! What would you like to do next?';
   }
- 
+ //need to implement conversation slots
+
   render() {
-    
     return (
     <div>
-
       <ChatBot
       title="Avot"
       botName="avotMOBILEHUB"

@@ -1,5 +1,8 @@
 ## Avo market
-Avo market is a web application for -.
+Avo market is a web application which can show avocado's market trend.
+
+### Live app link
+https://avomarket.netlify.com
 
 ### App built with
 * React
