@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { ChatBot } from 'aws-amplify-react';
 
+
 class Home extends Component {
   handleComplete(err, confirmation) {
     if (err) {
@@ -15,6 +16,7 @@ class Home extends Component {
   render() {
     return (
     <div>
+    
       <ChatBot
       title="Avot"
       botName="avotMOBILEHUB"
@@ -22,6 +24,7 @@ class Home extends Component {
       onComplete={this.handleComplete.bind(this)}
       clearOnComplete={true}
     />
+
     </div>
     );
   }

@@ -35,18 +35,6 @@ class Home extends Component {
 
               <Explain />
               <Chat />
-              <br></br><br></br><br></br>
-              <p>
-                Please{' '}
-                <a href
-                  style={{ cursor: 'pointer' }}
-                  onClick={this.login}
-                >
-                  Log In
-                </a>
-                {' '}to check it out more dashboard!
-              </p>
-              <br></br><br></br> 
             </div>
           )
         }
