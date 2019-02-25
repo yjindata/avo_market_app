@@ -20,7 +20,6 @@ Use [Yarn](https://yarnpkg.com/en/) to install dependencies and start the local 
 
 ## Functions
 
-- Sign up and Login with auth0
 - Data visualization
 - Amazon lex Chatbot
 
